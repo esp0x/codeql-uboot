@@ -1,5 +1,7 @@
 import cpp
-from MacroInvocation m
-where m.getParentInvocation().getMacroName().regexpMatch("ntohl|ntohll|ntohs")
-select m
+from MacroInvocation m2
+where 
+    m2.getMacroName().regexpMatch("ntohl|ntohll|ntohs")
+
+select m2
 
